@@ -44,9 +44,12 @@
                 <p class="mb-2 text-[14px] font-medium text-[#64748B]"><span id="job-count">0</span> jobs</p>
             </div>
             <div class="flex gap-2 mt-6 mb-4">
-                <button id="all-btn" class="btn btn-soft btn-active btn-primary" onclick="toggle('all-btn')">All</button>
-                <button id="interview-btn" class="btn btn-soft btn-primary" onclick="toggle('interview-btn')">Interview</button>
-                <button id="rejected-btn" class="btn btn-soft btn-primary" onclick="toggle('rejected-btn')">Rejected</button>
+                <button id="all-btn" class="btn btn-soft btn-active btn-primary"
+                    onclick="toggle('all-btn')">All</button>
+                <button id="interview-btn" class="btn btn-soft btn-primary"
+                    onclick="toggle('interview-btn')">Interview</button>
+                <button id="rejected-btn" class="btn btn-soft btn-primary"
+                    onclick="toggle('rejected-btn')">Rejected</button>
             </div>
             <div id="cards-container">
                 <div id="interviewed-card" class="flex flex-col gap-4 hidden">
@@ -63,7 +66,7 @@
                                 <h3 class="job-name text-[18px] font-bold text-[#002C5C] mb-1">Mobile First Corp</h3>
                                 <p class="subtitle mb-2 text-[16px] text-[#64748B]">React Native Developer</p>
                             </div>
-                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full"><i
+                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full cursor-pointer"><i
                                     class="fa-regular fa-trash-can"></i>
                             </div>
                         </div>
@@ -85,20 +88,20 @@
                     <div class="card flex flex-col gap-5 p-6 border border-[#d2d2d2] bg-[#FFFFFF]">
                         <div class="flex justify-between items-start">
                             <div>
-                                <h3 class="job-name text-[18px] font-bold text-[#002C5C] mb-1">First Corp</h3>
-                                <p class="subtitle mb-2 text-[16px] text-[#64748B]">React Native Developer</p>
+                                <h3 class="job-name text-[18px] font-bold text-[#002C5C] mb-1">WebFlow Agency</h3>
+                                <p class="subtitle mb-2 text-[16px] text-[#64748B]">Web Designer & Developer</p>
                             </div>
-                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full"><i
+                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full cursor-pointer"><i
                                     class="fa-regular fa-trash-can"></i>
                             </div>
                         </div>
-                        <p class="mb-2 text-[14px] text-[#64748B]"><span class="job-type">Remote</span> • <span
-                                class="job-level">Full-time</span> • <span class="job-salary">$130,000 - $175,000</span>
+                        <p class="mb-2 text-[14px] text-[#64748B]"><span class="job-type">Los Angeles, CA</span> • <span
+                                class="job-level">Part-time</span> • <span class="job-salary">$80,000 - $120,000</span>
                         </p>
                         <div>
                             <button class="stats btn btn-soft">Not Applied</button>
-                            <p class=" description mt-2 text-[14px] text-[#323B49]">Build cross-platform mobile
-                                applications using React Native. Work on products used by millions of users worldwide.
+                            <p class=" description mt-2 text-[14px] text-[#323B49]">Create stunning web experiences for
+                                high-profile clients. Must have portfolio and experience with modern web design trends.
                             </p>
                         </div>
                         <div class="flex gap-2 items-center justify-start">
@@ -107,7 +110,166 @@
                         </div>
                     </div>
                     <!-- Cards - 3 -->
+                    <div class="card flex flex-col gap-5 p-6 border border-[#d2d2d2] bg-[#FFFFFF]">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="job-name text-[18px] font-bold text-[#002C5C] mb-1">DataViz Solutions</h3>
+                                <p class="subtitle mb-2 text-[16px] text-[#64748B]">Data Visualization Specialist</p>
+                            </div>
+                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full cursor-pointer"><i
+                                    class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </div>
+                        <p class="mb-2 text-[14px] text-[#64748B]"><span class="job-type">Boston, MA</span> • <span
+                                class="job-level">Full-time</span> • <span class="job-salary">$125,000 - $165,000</span>
+                        </p>
+                        <div>
+                            <button class="stats btn btn-soft">Not Applied</button>
+                            <p class=" description mt-2 text-[14px] text-[#323B49]">Transform complex data into
+                                compelling visualizations. Required skills: D3.js, React, and strong analytical
+                                thinking.
+                            </p>
+                        </div>
+                        <div class="flex gap-2 items-center justify-start">
+                            <button class="interview-btn btn btn-outline btn-success">Interview</button>
+                            <button class="reject-btn btn btn-outline btn-error">Rejected</button>
+                        </div>
+                    </div>
+                    <!-- card - 4 -->
+                    <div class="card flex flex-col gap-5 p-6 border border-[#d2d2d2] bg-[#FFFFFF]">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="job-name text-[18px] font-bold text-[#002C5C] mb-1">CloudFirst Inc</h3>
+                                <p class="subtitle mb-2 text-[16px] text-[#64748B]">Backend Developer</p>
+                            </div>
+                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full cursor-pointer"><i
+                                    class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </div>
+                        <p class="mb-2 text-[14px] text-[#64748B]"><span class="job-type">Seattle, WA</span> • <span
+                                class="job-level">Full-time</span> • <span class="job-salary">$140,000 - $190,000</span>
+                        </p>
+                        <div>
+                            <button class="stats btn btn-soft">Not Applied</button>
+                            <p class=" description mt-2 text-[14px] text-[#323B49]">Design and maintain scalable backend
+                                systems using Python and AWS. Work with modern DevOps practices and cloud
+                                infrastructure.
+                            </p>
+                        </div>
+                        <div class="flex gap-2 items-center justify-start">
+                            <button class="interview-btn btn btn-outline btn-success">Interview</button>
+                            <button class="reject-btn btn btn-outline btn-error">Rejected</button>
+                        </div>
+                    </div>
+                    <!-- card - 5 -->
+                    <div class="card flex flex-col gap-5 p-6 border border-[#d2d2d2] bg-[#FFFFFF]">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="job-name text-[18px] font-bold text-[#002C5C] mb-1">AI Innovators</h3>
+                                <p class="subtitle mb-2 text-[16px] text-[#64748B]">Machine Learning Engineer</p>
+                            </div>
+                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full cursor-pointer"><i
+                                    class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </div>
+                        <p class="mb-2 text-[14px] text-[#64748B]"><span class="job-type">Remote</span> • <span
+                                class="job-level">Full-time</span> • <span class="job-salary">$150,000 - $200,000</span>
+                        </p>
+                        <div>
+                            <button class="stats btn btn-soft">Not Applied</button>
+                            <p class=" description mt-2 text-[14px] text-[#323B49]">Develop and deploy machine learning
+                                models for cutting-edge AI applications. Experience with TensorFlow, PyTorch, and cloud
+                                ML services required.
+                            </p>
+                        </div>
+                        <div class="flex gap-2 items-center justify-start">
+                            <button class="interview-btn btn btn-outline btn-success">Interview</button>
+                            <button class="reject-btn btn btn-outline btn-error">Rejected</button>
+                        </div>
+                    </div>
 
+                    <!-- card - 6 -->
+
+                    <div class="card flex flex-col gap-5 p-6 border border-[#d2d2d2] bg-[#FFFFFF]">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="job-name text-[18px] font-bold text-[#002C5C] mb-1">FinTech Pros</h3>
+                                <p class="subtitle mb-2 text-[16px] text-[#64748B]">Financial Software Engineer</p>
+                            </div>
+                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full cursor-pointer"><i
+                                    class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </div>
+                        <p class="mb-2 text-[14px] text-[#64748B]"><span class="job-type">New York, NY</span> • <span
+                                class="job-level">Full-time</span> • <span class="job-salary">$130,000 - $180,000</span>
+                        </p>
+                        <div>
+                            <button class="stats btn btn-soft">Not Applied</button>
+                            <p class=" description mt-2 text-[14px] text-[#323B49]">Build secure and efficient financial
+                                software solutions. Experience with Java, Spring Boot, and financial APIs is a plus.
+                            </p>
+                        </div>
+                        <div class="flex gap-2 items-center justify-start">
+                            <button class="interview-btn btn btn-outline btn-success">Interview</button>
+                            <button class="reject-btn btn btn-outline btn-error">Rejected</button>
+                        </div>
+                    </div>
+
+                    <!-- card - 7 -->
+
+                    <div class="card flex flex-col gap-5 p-6 border border-[#d2d2d2] bg-[#FFFFFF]">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="job-name text-[18px] font-bold text-[#002C5C] mb-1">HealthTech Heroes</h3>
+                                <p class="subtitle mb-2 text-[16px] text-[#64748B]">Healthcare Software Developer</p>
+                            </div>
+                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full cursor-pointer"><i
+                                    class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </div>
+                        <p class="mb-2 text-[14px] text-[#64748B]"><span class="job-type">Chicago, IL</span> • <span
+                                class="job-level">Full-time</span> • <span class="job-salary">$120,000 - $170,000</span>
+                        </p>
+                        <div>
+                            <button class="stats btn btn-soft">Not Applied</button>
+                            <p class=" description mt-2 text-[14px] text-[#323B49]">Develop software solutions for the
+                                healthcare industry. Experience with healthcare data standards (HL7, FHIR) and secure
+                                coding practices is preferred.
+                            </p>
+                        </div>
+                        <div class="flex gap-2 items-center justify-start">
+                            <button class="interview-btn btn btn-outline btn-success">Interview</button>
+                            <button class="reject-btn btn btn-outline btn-error">Rejected</button>
+                        </div>
+                    </div>
+
+                    <!-- card - 8 -->
+
+                    <div class="card flex flex-col gap-5 p-6 border border-[#d2d2d2] bg-[#FFFFFF]">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="job-name text-[18px] font-bold text-[#002C5C] mb-1">EduTech Innovators</h3>
+                                <p class="subtitle mb-2 text-[16px] text-[#64748B]">Educational Software Engineer</p>
+                            </div>
+                            <div class="delete-icon p-2 border border-[#d2d2d2] rounded-full cursor-pointer"><i
+                                    class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </div>
+                        <p class="mb-2 text-[14px] text-[#64748B]"><span class="job-type">Remote</span> • <span
+                                class="job-level">Part-time</span> • <span class="job-salary">$60,000 - $90,000</span>
+                        </p>
+                        <div>
+                            <button class="stats btn btn-soft">Not Applied</button>
+                            <p class=" description mt-2 text-[14px] text-[#323B49]">Create engaging educational software
+                                solutions. Experience with gamification, interactive content, and modern web
+                                technologies is a plus.
+                            </p>
+                        </div>
+                        <div class="flex gap-2 items-center justify-start">
+                            <button class="interview-btn btn btn-outline btn-success">Interview</button>
+                            <button class="reject-btn btn btn-outline btn-error">Rejected</button>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -121,7 +283,7 @@
             </div>
         </div>
     </main>
-    
+
     <script src="toggle.js"></script>
     <script src="filter.js"></script>
     <script src="render.js"></script>

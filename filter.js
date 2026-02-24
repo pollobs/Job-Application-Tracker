@@ -28,7 +28,7 @@ jobCount.innerText = allCards.children.length;
 function filter(name) {
     name.addEventListener('click', function (event) {
 
-        if(event.target.classList.contains("interview-btn")) {
+        if (event.target.classList.contains("interview-btn")) {
             const parentNode = event.target.parentNode.parentNode;
             const jobName = parentNode.querySelector('.job-name').innerText;
             const subTitle = parentNode.querySelector('.subtitle').innerText;
@@ -59,7 +59,7 @@ function filter(name) {
             rejectRender()
         }
 
-        if(event.target.classList.contains("reject-btn")) {
+        if (event.target.classList.contains("reject-btn")) {
             const parentNode = event.target.parentNode.parentNode;
             const jobName = parentNode.querySelector('.job-name').innerText;
             const subTitle = parentNode.querySelector('.subtitle').innerText;
@@ -85,9 +85,24 @@ function filter(name) {
             }
 
             parentNode.querySelector('.stats').innerText = 'Rejected';
-            interviewRender()
             rejectRender()
+            interviewRender()
         }
+
+        if (event.target.classList.contains("delete-icon")) {
+            const parentNode = event.target.parentNode.parentNode;
+            const jobName = parentNode.querySelector('.job-name').innerText;
+
+            interviewList = interviewList.filter(item => item.jobName !== jobName);
+            rejectList = rejectList.filter(item => item.jobName !== jobName);
+
+            parentNode.remove();
+
+        }
+            allCount.innerText = allCards.children.length;
+            interviewCount.innerText = interviewList.length;
+            rejectedCount.innerText = rejectList.length;
+        
     })
 }
 

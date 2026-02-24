@@ -27,7 +27,16 @@ function interviewRender(){
                         </div>`
 
         interviewedCard.append(div);
-    }
+    } 
+    if (interviewList.length === 0){
+            interviewedCard.classList.add('hidden');
+            notFound.classList.remove('hidden');
+        }
+        else{
+            notFound.classList.add('hidden');
+        }
+    
+    
     interviewCount.innerText = interviewList.length;
 
 }
@@ -62,6 +71,15 @@ function rejectRender(){
 
         rejectedCard.append(div);
     }
+
+     if (rejectList.length === 0){
+            rejectedCard.classList.add('hidden');
+            notFound.classList.remove('hidden');
+        }
+        else{
+            notFound.classList.add('hidden');
+        }
+
     rejectedCount.innerText = rejectList.length;
 
 }
